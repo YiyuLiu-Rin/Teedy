@@ -226,6 +226,13 @@
       <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
+    
+    <!-- <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.7.1</version>
+    </dependency> -->
+
   </dependencies>
   
   <profiles>
@@ -263,6 +270,24 @@
         <filtering>false</filtering>
       </resource>
     </resources>
+
+    <!-- <plugins>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.0.0</version>
+      <configuration>
+      <includes>
+      <include>ActionUtil.java</include>
+      </includes>
+      <excludes>
+      <exclude>**/TestCircle.java</exclude>
+      <exclude>**/TestSquare.java</exclude>
+      </excludes>
+      </configuration>
+      </plugin>
+    </plugins> -->
+
   </build>
 
 </project>
