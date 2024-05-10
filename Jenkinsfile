@@ -18,7 +18,7 @@ pipeline {
         }
         stage("JavaDoc") {
             steps {
-                sh 'mvn javadoc:javadoc --fail-never'
+                sh 'mvn javadoc:jar --fail-never'
             }
         }
     }
